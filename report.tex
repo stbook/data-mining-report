@@ -87,35 +87,226 @@ For the real world datasets, we take several datasets from UCI dataset repositor
 \subsection{Experiment Setup}
 To make sure that the implementation computing hubness scores is correct, we replicate the experiment settings mentioned in [1] to see if I get similar results.\\
 To evaluate our experiments on hubs distribution across clusters, we will draw some plots to show how the maximal distance and minimal distance evolve through iterations. Data dimensions below 10 are used to illustrate low-dimensional behavior while dimensions above 10 are used to illustrate high-dimensional behavior. The neighborhood size is set to 10 across all the datasets.\\
-To set up the DBSCAN $eps$ parameter, we read the kdist graph, a graph recording the distance of each point to its 10th nearest neighbor. Table \ref{exp-setup} shows the $eps$ value of each dataset.
+To set up the DBSCAN $eps$ parameter, we read the kdist graph, a graph recording the distance of each point to its 10th nearest neighbor. Table \ref{tab:exp-setup} shows the $eps$ value of each dataset.
 \begin{table}
 \begin{center}
 	\begin{tabular}{||c c c c||}
 	\hline
 	Synthetic Datasets & Eps Value & Real Datasets & Eps Value\\[0.5ex]
 	\hline
-	2-dim gm & 2.0 & Iris & 0.35\\
+	2-dim gm & 1.0 & Iris & 0.28\\
 	\hline
-	5-dim gm & 4.5 & Abalone & 0.2\\
+	5-dim gm & 3.2 & Abalone & 0.17\\
 	\hline
-	10-dim gm & 7.2 & WPBG & 1.6\\
+	10-dim gm & 5.8 & WPBG & 1.2\\
 	\hline
-	20-dim gm & 11 & Sonar & 2.4\\
+	20-dim gm & 9.3 & Sonar & 2.2\\
 	\hline
-	30-dim gm & 13.5 & Hill and Valley & 0.9\\
+	30-dim gm & 12.0 & Hill and Valley & 0.8\\
 	\hline
-	50-dim gm & 18 & ... & ...\\
+	50-dim gm & 16.5 &  & \\
 	\hline
-	100-dim gm & 26 & ... & ...\\
+	100-dim gm & 24.6 &  & \\
 	\hline
 \end{tabular}
 \caption{Datasets and DBSCAN $eps$ Parameter}
 \end{center}
-\label{exp-setup}
+\label{tab:exp-setup}
 \end{table} 
 
 \subsection{Experimental Results}
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=0.8\textwidth]{FIGS/example_gaussian_mixture.png}
+		\caption{Example Gaussian Mixture}
+		\label{fig:example_gm}
+	\end{center}
+\end{figure}
 
+% synthetic dataset min and max distances of lower dimension
+\begin{figure}[ht]
+	\begin{center}
+		\subfloat[Minimal dis, d = 2]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim2_avg_min.png}
+		}
+		\hspace{5mm}
+		\subfloat[Maximal dis, d = 2]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim2_avg_max.png}
+		}
+		\hspace{5mm}
+		\subfloat[Minimal dis, d = 5]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim5_avg_min.png}
+		}
+		\hspace{5mm}
+		\subfloat[Maximal dis, d = 5]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim5_avg_max.png}
+		}
+		\hspace{5mm}
+		\subfloat[Minimal dis, d = 10]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim10_avg_min.png}
+		}
+		\hspace{5mm}
+		\subfloat[Maximal dis, d = 10]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim10_avg_max.png}
+		}
+		\caption{low-dim synthetic data results}
+	\label{fig:syn1}
+	\end{center}
+\end{figure}
+% synthetic dataset min and max distances of higher dimension
+\begin{figure}[ht]
+	\begin{center}
+		\subfloat[Minimal dis, d = 20]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim20_avg_min.png}
+		}
+		\hspace{5mm}
+		\subfloat[Maximal dis, d = 20]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim20_avg_max.png}
+		}
+		\hspace{5mm}
+		\subfloat[Minimal dis, d = 30]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim30_avg_min.png}
+		}
+		\hspace{5mm}
+		\subfloat[Maximal dis, d = 30]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim30_avg_max.png}
+		}
+		\hspace{5mm}
+		\subfloat[Minimal dis, d = 50]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim50_avg_min.png}
+		}
+		\hspace{5mm}
+		\subfloat[Maximal dis, d = 50]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim50_avg_max.png}
+		}
+		\hspace{5mm}
+		\subfloat[Minimal dis, d = 100]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim100_avg_min.png}
+		}
+		\hspace{5mm}
+		\subfloat[Maximal dis, d = 100]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-synData/dim100_avg_max.png}
+		}
+	\caption{high-dim synthetic data results}
+	\label{fig:syn2}
+	\end{center}
+\end{figure}
+% real dataset min and max distances of lower dimension
+\begin{figure}[ht]
+	\begin{center}
+		\subfloat[Minimal dis, Iris Dataset]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-realData/dim4_irisDataset_min.png}
+		}
+		\hspace{5mm}
+		\subfloat[Maximal dis, Iris Dataset]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-realData/dim4_irisDataset_max.png}
+		}
+		\hspace{5mm}
+		\subfloat[Minimal dis, Abalone Dataset]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-realData/dim8_abaloneDataset_min.png}
+		}
+		\hspace{5mm}
+		\subfloat[Maximal dis, Abalone Dataset]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-realData/dim8_abaloneDataset_max.png}
+		}
+		\caption{low-dim real data results}
+	\label{fig:real1}
+	\end{center}
+\end{figure}
+% real dataset min and max distances of higher dimension
+\begin{figure}[ht]
+	\begin{center}
+		\subfloat[Minimal dis, Wpbc Dataset]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-realData/dim32_wpbcDataset_min.png}
+		}
+		\hspace{5mm}
+		\subfloat[Maximal dis, Wpbc Dataset]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-realData/dim32_wpbcDataset_max.png}
+		}
+		\hspace{5mm}
+		\subfloat[Minimal dis, Sonar Dataset]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-realData/dim60_sonarDataset_min.png}
+		}
+		\hspace{5mm}
+		\subfloat[Maximal dis, Sonar Dataset]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-realData/dim60_sonarDataset_max.png}
+		}
+		\hspace{5mm}
+		\subfloat[Minimal dis, Hill Dataset]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-realData/dim100_hillDataset_min.png}
+		}
+		\hspace{5mm}
+		\subfloat[Maximal dis, Hill Dataset]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part1-realData/dim100_hillDataset_max.png}
+		}
+		\caption{high-dim real data results}
+	\label{fig:real2}
+	\end{center}
+\end{figure}
+%kdist graph
+\begin{figure}[ht]
+	\begin{center}
+		\subfloat[Synthetic Dataset, d = 2]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part2-synData/dim2_dis2NN_hist.png}
+		}
+		\hspace{5mm}
+		\subfloat[Iris Dataset, d = 4]{
+			\includegraphics[width=0.4\textwidth]{FIGS/part2-realData/dim4_iris_dis2NN_hist.png}
+		}
+		\caption{kdist graph of low dimensional data}
+		\label{fig:example_gm}
+	\end{center}
+\end{figure}
+% table 2
+\begin{table}
+\begin{center}
+	\begin{tabular}{||c c c c||}
+	\hline
+	Synthetic Datasets & $N_{a}$ of Noise Points& $N_{b}$ of Noise Points below Average & Percentage $\frac{N_{b}}{N_{a}}$\\[0.5ex]
+	\hline
+	\hline
+	2-dim gm & 157 (from $10^4$ points) & 97 & $61.78\%$\\
+	\hline
+	5-dim gm & 121 (from $10^4$ points) & 95 & $78.51\%$\\
+	\hline
+	10-dim gm & 120 (from $10^4$ points) & 0 & $0\%$\\
+	\hline
+	20-dim gm & 121 (from $10^4$ points) & 0 & $0\%$\\
+	\hline
+	30-dim gm & 129 (from $10^4$ points) & 0 & $0\%$\\
+	\hline
+	50-dim gm & 110 (from $10^4$ points) & 0 & $0\%$\\
+	\hline
+	100-dim gm & 117 (from $10^4$ points) & 0 & $0\%$\\
+	\hline
+\end{tabular}
+\caption{Compare DBSCAN noise points hubness score to the average on synthetic datasets}
+\end{center}
+\label{tab:noise1}
+\end{table} 
+
+\begin{table}
+\begin{center}
+	\begin{tabular}{||c c c c||}
+	\hline
+	Real Datasets & $N_{a}$ of Noise Points & $N_{b}$ of Noise Points below Average & Percentage $\frac{N_{b}}{N_{a}}$\\[0.5ex]
+	\hline
+	\hline
+	Iris & 2 (from 150 points) & 0 & $0\%$\\
+	\hline
+	Abalone & 29 (from 4177 points) & 0 & $0\%$\\
+	\hline
+	Wpbg & 4 (from 198 points) & 0 & $0\%$\\
+	\hline
+	Sonar & 5 (from 208 points) & 0 & $0\%$\\
+	\hline
+	Hill & 4 (from 606 points) & 3 & $75\%$\\
+	\hline
+\end{tabular}
+\caption{Compare DBSCAN noise points hubness score to the average on real datasets}
+\end{center}
+\label{tab:noise2}
+\end{table} 
 
 
 \section{Conclusion}
