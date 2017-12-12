@@ -107,7 +107,6 @@ To set up the DBSCAN $eps$ parameter, we read the kdist graph, a graph recording
 	50-dim gm & 16.5 &  & \\
 	\hline
 	100-dim gm & 24.6 &  & \\
-	\hline
 \end{tabular}
 \caption{Datasets and DBSCAN $eps$ Parameter}
 \end{center}
@@ -115,6 +114,11 @@ To set up the DBSCAN $eps$ parameter, we read the kdist graph, a graph recording
 \end{table} 
 
 \subsection{Experimental Results}
+To prove that the synthetic datasets are created correctly, we draw out the point distribution of the 2-dim gaussian mixture on Figure \ref{fig:example_gm}. It's clear to see that there are 10 clusters there, even though sometimes 2 of them might be very close to each other. It's also worth mentioning that all the cluster centroids x-coordinates are inside $[-20, 20]$ and y-coordinates are also inside $[-20, 20]$. This is because we set up the gaussian distribution means to be inside $[-20, 20]$. This also proves that our implementation to generate synthetic data is correct.\\
+Let's move on to the first part of the whole project, exploring the relation between hubness points and cluster medoids. Figure \ref{fig:syn1} shows the results on low-dimensional synthetic datasets. The dimension of the points in these datasets are below or equal to 0. Apparently, both the minimal and maximal distances from the cluster centroids to the cluster medoids and from the cluster centroids to the strongest hubness points are still very different, even though the two lines are getting closer as the dimension increases. This means that for low dimensional synthetic data, the cluster medoid and the strongest hubness point in the cluster are still two different points. However, when it comes to high-dimensional data, things change. Figure \ref{fig:syn2} shows the results on high-dimensional synthetic data. When the dimension increases to 30, the distance from the cluster centroid to the cluster medoid and the distance from the cluster centroid to the strongest hubness point are the same. This means that under high-dimensional condition, the strongest hubness point is the cluster medoid in a cluster.\\
+Above is the analysis towards synthetic data. When we do experiments using real-world datasets, we get different results. Figure \ref{fig:real1} and Figure \ref{fig:real2} show the results on both low-dimensional and high-dimensional real world datasets. It's not difficult to find that no matter how the data dimension increases, the distance from cluster centroid to cluster medoid and the distance from cluster centroid to strongest hubness point are still different. This means that the strongest hubness point is not the cluster medoid when it comes to real-world datasets.\\
+Let's move on to the second part of the whole project, exploring the relation between low hubness points and DBSCAN detected noise points. Figure \ref{fig:kdist} shows the kdist graph we use when we set up the DBSCAN $eps$ parameter. The kdist graph shows the number of points whose distance to their 10th nearest neighbors is below a value. We want to make sure that nearly $1\%$ points over the whole dataset will be selected as noise points when we run DBSCAN. The final $eps$ value for each dataset is shown by Table \ref{tab:exp-setup}. Table \ref{tab:noise1} shows the experiment results on synthetic datasets. When the dimension of data is 2 or 5, there are over $50\%$ of the DBSCAN detected noise points, whose hubness value is two standard deviations below the hubness average over the whole dataset. When the dimension grows to more than 5, the hubness value is no more an indicator of whether a point is an outler. No DBSCAN detected points have hubness values 2 standard deviations below the average. So we can use low hubness value as an efficient indicator to find outliers when we deal with low dimensional synthetic data. Things are very different when we work on real-world datasets. Table \ref{fig:real2} shows the experiment results. It turns out when the data dimension is below 100, there are no DBSCAN detected noise points whose hubness value is two standard deviations below the average. When we work on Hill Dataset, whose data dimension is 100, there are $75\%$ noise points whose hubness points satisfy the outlier threshold. It seems that the result on real world datasets is totally the opposite of what we have from synthetic datasets. Considering the difference of dataset size between synthetic datasets and real-world datasets, there are 10,000 points in a synthetic dataset while there are usually below 500 points in a real-world dataset. We can't say that the conclusion we have from synthetic datasets is totally wrong. But we think it's fair to say we can never use low hubness score as an indicator to see if a point is an outlier.
+
 \begin{figure}[ht]
 	\begin{center}
 		\includegraphics[width=0.8\textwidth]{FIGS/example_gaussian_mixture.png}
@@ -254,7 +258,7 @@ To set up the DBSCAN $eps$ parameter, we read the kdist graph, a graph recording
 			\includegraphics[width=0.4\textwidth]{FIGS/part2-realData/dim4_iris_dis2NN_hist.png}
 		}
 		\caption{kdist graph of low dimensional data}
-		\label{fig:example_gm}
+		\label{fig:kdist}
 	\end{center}
 \end{figure}
 % table 2
@@ -312,7 +316,7 @@ To set up the DBSCAN $eps$ parameter, we read the kdist graph, a graph recording
 \section{Conclusion}
 
 \section{Contribution}
-Yimeng Li finished exploring the relation between hign-hubness points and cluster modoids. He also finished exploring the relation between low-hubness points and DBSCAN-detected noise points.
+Yimeng Li worked on exploring the relation between hign-hubness points and cluster modoids. He also finished exploring the relation between low-hubness points and DBSCAN-detected noise points. All the things, including slides, experiments and report about these stuff are finished by him.
 
 \bibliography{report}
 

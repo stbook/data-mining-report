@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  11 DEC 2017 17:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.8.23)  11 DEC 2017 21:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -302,11 +302,7 @@ File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Hy@SectionHShift=\skip54
 )
 \c@theorem=\count119
- (./report.aux
-
-LaTeX Warning: Label `fig:example_gm' multiply defined.
-
-)
+ (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
@@ -323,7 +319,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
 LaTeX Font Info:    ... okay on input line 57.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count120
 \scratchdimen=\dimen128
@@ -419,280 +416,292 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 80.
 
 
-Package caption Warning: \label without proper reference on input line 114.
+Package caption Warning: \label without proper reference on input line 113.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `tab:exp-setup' on page 3 undefined on input line 90.
 
-<FIGS/example_gaussian_mixture.png, id=60, 578.16pt x 433.62pt>
+
+Package caption Warning: \label without proper reference on input line 113.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:exp-setup' on page 3 undefined on input line 120.
+
+
+
+Package caption Warning: \label without proper reference on input line 289.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `tab:noise1' on page 3 undefined on input line 120.
+
+[3] [4] <FIGS/example_gaussian_mixture.png, id=91, 578.16pt x 433.62pt>
 File: FIGS/example_gaussian_mixture.png Graphic file (type png)
 
 <use FIGS/example_gaussian_mixture.png>
 Package pdftex.def Info: FIGS/example_gaussian_mixture.png used on input line 1
-20.
+24.
 (pdftex.def)             Requested size: 375.80542pt x 281.84966pt.
 
-<FIGS/part1-synData/dim2_avg_min.png, id=61, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim2_avg_min.png, id=92, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim2_avg_min.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim2_avg_min.png>
 Package pdftex.def Info: FIGS/part1-synData/dim2_avg_min.png used on input line
- 131.
+ 135.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-synData/dim2_avg_max.png, id=62, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim2_avg_max.png, id=93, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim2_avg_max.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim2_avg_max.png>
 Package pdftex.def Info: FIGS/part1-synData/dim2_avg_max.png used on input line
- 135.
+ 139.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-synData/dim5_avg_min.png, id=63, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim5_avg_min.png, id=94, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim5_avg_min.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim5_avg_min.png>
 Package pdftex.def Info: FIGS/part1-synData/dim5_avg_min.png used on input line
- 139.
+ 143.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-synData/dim5_avg_max.png, id=64, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim5_avg_max.png, id=95, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim5_avg_max.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim5_avg_max.png>
 Package pdftex.def Info: FIGS/part1-synData/dim5_avg_max.png used on input line
- 143.
+ 147.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-synData/dim10_avg_min.png, id=65, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim10_avg_min.png, id=96, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim10_avg_min.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim10_avg_min.png>
 Package pdftex.def Info: FIGS/part1-synData/dim10_avg_min.png used on input lin
-e 147.
+e 151.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-synData/dim10_avg_max.png, id=66, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim10_avg_max.png, id=97, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim10_avg_max.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim10_avg_max.png>
 Package pdftex.def Info: FIGS/part1-synData/dim10_avg_max.png used on input lin
-e 151.
+e 155.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-synData/dim20_avg_min.png, id=67, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim20_avg_min.png, id=98, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim20_avg_min.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim20_avg_min.png>
 Package pdftex.def Info: FIGS/part1-synData/dim20_avg_min.png used on input lin
-e 161.
+e 165.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-synData/dim20_avg_max.png, id=68, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim20_avg_max.png, id=99, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim20_avg_max.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim20_avg_max.png>
 Package pdftex.def Info: FIGS/part1-synData/dim20_avg_max.png used on input lin
-e 165.
+e 169.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-synData/dim30_avg_min.png, id=69, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim30_avg_min.png, id=100, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim30_avg_min.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim30_avg_min.png>
 Package pdftex.def Info: FIGS/part1-synData/dim30_avg_min.png used on input lin
-e 169.
+e 173.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-synData/dim30_avg_max.png, id=70, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim30_avg_max.png, id=101, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim30_avg_max.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim30_avg_max.png>
 Package pdftex.def Info: FIGS/part1-synData/dim30_avg_max.png used on input lin
-e 173.
+e 177.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-synData/dim50_avg_min.png, id=71, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim50_avg_min.png, id=102, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim50_avg_min.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim50_avg_min.png>
 Package pdftex.def Info: FIGS/part1-synData/dim50_avg_min.png used on input lin
-e 177.
+e 181.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-synData/dim50_avg_max.png, id=72, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim50_avg_max.png, id=103, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim50_avg_max.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim50_avg_max.png>
 Package pdftex.def Info: FIGS/part1-synData/dim50_avg_max.png used on input lin
-e 181.
+e 185.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-synData/dim100_avg_min.png, id=73, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim100_avg_min.png, id=104, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim100_avg_min.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim100_avg_min.png>
 Package pdftex.def Info: FIGS/part1-synData/dim100_avg_min.png used on input li
-ne 185.
+ne 189.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-synData/dim100_avg_max.png, id=74, 578.16pt x 433.62pt>
+<FIGS/part1-synData/dim100_avg_max.png, id=105, 578.16pt x 433.62pt>
 File: FIGS/part1-synData/dim100_avg_max.png Graphic file (type png)
 
 <use FIGS/part1-synData/dim100_avg_max.png>
 Package pdftex.def Info: FIGS/part1-synData/dim100_avg_max.png used on input li
-ne 189.
+ne 193.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
 
-LaTeX Warning: Float too large for page by 59.09673pt on input line 193.
+LaTeX Warning: Float too large for page by 59.09673pt on input line 197.
 
-<FIGS/part1-realData/dim4_irisDataset_min.png, id=75, 578.16pt x 433.62pt>
+<FIGS/part1-realData/dim4_irisDataset_min.png, id=106, 578.16pt x 433.62pt>
 File: FIGS/part1-realData/dim4_irisDataset_min.png Graphic file (type png)
 
 <use FIGS/part1-realData/dim4_irisDataset_min.png>
 Package pdftex.def Info: FIGS/part1-realData/dim4_irisDataset_min.png used on i
-nput line 199.
+nput line 203.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-realData/dim4_irisDataset_max.png, id=76, 578.16pt x 433.62pt>
+<FIGS/part1-realData/dim4_irisDataset_max.png, id=107, 578.16pt x 433.62pt>
 File: FIGS/part1-realData/dim4_irisDataset_max.png Graphic file (type png)
 
 <use FIGS/part1-realData/dim4_irisDataset_max.png>
 Package pdftex.def Info: FIGS/part1-realData/dim4_irisDataset_max.png used on i
-nput line 203.
+nput line 207.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-realData/dim8_abaloneDataset_min.png, id=77, 578.16pt x 433.62pt>
+<FIGS/part1-realData/dim8_abaloneDataset_min.png, id=108, 578.16pt x 433.62pt>
 File: FIGS/part1-realData/dim8_abaloneDataset_min.png Graphic file (type png)
 
 <use FIGS/part1-realData/dim8_abaloneDataset_min.png>
 Package pdftex.def Info: FIGS/part1-realData/dim8_abaloneDataset_min.png used o
-n input line 207.
+n input line 211.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-realData/dim8_abaloneDataset_max.png, id=78, 578.16pt x 433.62pt>
+<FIGS/part1-realData/dim8_abaloneDataset_max.png, id=109, 578.16pt x 433.62pt>
 File: FIGS/part1-realData/dim8_abaloneDataset_max.png Graphic file (type png)
 
 <use FIGS/part1-realData/dim8_abaloneDataset_max.png>
 Package pdftex.def Info: FIGS/part1-realData/dim8_abaloneDataset_max.png used o
-n input line 211.
+n input line 215.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-realData/dim32_wpbcDataset_min.png, id=79, 578.16pt x 433.62pt>
+<FIGS/part1-realData/dim32_wpbcDataset_min.png, id=110, 578.16pt x 433.62pt>
 File: FIGS/part1-realData/dim32_wpbcDataset_min.png Graphic file (type png)
 
 <use FIGS/part1-realData/dim32_wpbcDataset_min.png>
 Package pdftex.def Info: FIGS/part1-realData/dim32_wpbcDataset_min.png used on 
-input line 221.
+input line 225.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-realData/dim32_wpbcDataset_max.png, id=80, 578.16pt x 433.62pt>
+<FIGS/part1-realData/dim32_wpbcDataset_max.png, id=111, 578.16pt x 433.62pt>
 File: FIGS/part1-realData/dim32_wpbcDataset_max.png Graphic file (type png)
 
 <use FIGS/part1-realData/dim32_wpbcDataset_max.png>
 Package pdftex.def Info: FIGS/part1-realData/dim32_wpbcDataset_max.png used on 
-input line 225.
+input line 229.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-realData/dim60_sonarDataset_min.png, id=81, 578.16pt x 433.62pt>
+<FIGS/part1-realData/dim60_sonarDataset_min.png, id=112, 578.16pt x 433.62pt>
 File: FIGS/part1-realData/dim60_sonarDataset_min.png Graphic file (type png)
 
 <use FIGS/part1-realData/dim60_sonarDataset_min.png>
 Package pdftex.def Info: FIGS/part1-realData/dim60_sonarDataset_min.png used on
- input line 229.
+ input line 233.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-realData/dim60_sonarDataset_max.png, id=82, 578.16pt x 433.62pt>
+<FIGS/part1-realData/dim60_sonarDataset_max.png, id=113, 578.16pt x 433.62pt>
 File: FIGS/part1-realData/dim60_sonarDataset_max.png Graphic file (type png)
 
 <use FIGS/part1-realData/dim60_sonarDataset_max.png>
 Package pdftex.def Info: FIGS/part1-realData/dim60_sonarDataset_max.png used on
- input line 233.
+ input line 237.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-realData/dim100_hillDataset_min.png, id=83, 578.16pt x 433.62pt>
+<FIGS/part1-realData/dim100_hillDataset_min.png, id=114, 578.16pt x 433.62pt>
 File: FIGS/part1-realData/dim100_hillDataset_min.png Graphic file (type png)
 
 <use FIGS/part1-realData/dim100_hillDataset_min.png>
 Package pdftex.def Info: FIGS/part1-realData/dim100_hillDataset_min.png used on
- input line 237.
+ input line 241.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part1-realData/dim100_hillDataset_max.png, id=84, 578.16pt x 433.62pt>
+<FIGS/part1-realData/dim100_hillDataset_max.png, id=115, 578.16pt x 433.62pt>
 File: FIGS/part1-realData/dim100_hillDataset_max.png Graphic file (type png)
 
 <use FIGS/part1-realData/dim100_hillDataset_max.png>
 Package pdftex.def Info: FIGS/part1-realData/dim100_hillDataset_max.png used on
- input line 241.
+ input line 245.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part2-synData/dim2_dis2NN_hist.png, id=85, 578.16pt x 433.62pt>
+<FIGS/part2-synData/dim2_dis2NN_hist.png, id=116, 578.16pt x 433.62pt>
 File: FIGS/part2-synData/dim2_dis2NN_hist.png Graphic file (type png)
 
 <use FIGS/part2-synData/dim2_dis2NN_hist.png>
 Package pdftex.def Info: FIGS/part2-synData/dim2_dis2NN_hist.png used on input 
-line 251.
+line 255.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-<FIGS/part2-realData/dim4_iris_dis2NN_hist.png, id=86, 578.16pt x 433.62pt>
+<FIGS/part2-realData/dim4_iris_dis2NN_hist.png, id=117, 578.16pt x 433.62pt>
 File: FIGS/part2-realData/dim4_iris_dis2NN_hist.png Graphic file (type png)
 
 <use FIGS/part2-realData/dim4_iris_dis2NN_hist.png>
 Package pdftex.def Info: FIGS/part2-realData/dim4_iris_dis2NN_hist.png used on 
-input line 255.
+input line 259.
 (pdftex.def)             Requested size: 187.89912pt x 140.92482pt.
 
-Overfull \hbox (6.54797pt too wide) in paragraph at lines 263--283
+Overfull \hbox (6.54797pt too wide) in paragraph at lines 267--287
  [] 
  []
 
 No file report.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 321.
-[3] [4] [5 <./FIGS/example_gaussian_mixture.png (PNG copy)>] [6 <./FIGS/part1-s
-ynData/dim2_avg_min.png (PNG copy)> <./FIGS/part1-synData/dim2_avg_max.png (PNG
- copy)> <./FIGS/part1-synData/dim5_avg_min.png (PNG copy)> <./FIGS/part1-synDat
-a/dim5_avg_max.png (PNG copy)> <./FIGS/part1-synData/dim10_avg_min.png (PNG cop
-y)> <./FIGS/part1-synData/dim10_avg_max.png (PNG copy)>] [7 <./FIGS/part1-synDa
-ta/dim20_avg_min.png (PNG copy)> <./FIGS/part1-synData/dim20_avg_max.png (PNG c
-opy)> <./FIGS/part1-synData/dim30_avg_min.png (PNG copy)> <./FIGS/part1-synData
-/dim30_avg_max.png (PNG copy)> <./FIGS/part1-synData/dim50_avg_min.png (PNG cop
-y)> <./FIGS/part1-synData/dim50_avg_max.png (PNG copy)> <./FIGS/part1-synData/d
-im100_avg_min.png (PNG copy)> <./FIGS/part1-synData/dim100_avg_max.png (PNG cop
-y)>] [8 <./FIGS/part1-realData/dim4_irisDataset_min.png (PNG copy)> <./FIGS/par
-t1-realData/dim4_irisDataset_max.png (PNG copy)> <./FIGS/part1-realData/dim8_ab
-aloneDataset_min.png (PNG copy)> <./FIGS/part1-realData/dim8_abaloneDataset_max
-.png (PNG copy)>] [9 <./FIGS/part1-realData/dim32_wpbcDataset_min.png (PNG copy
-)> <./FIGS/part1-realData/dim32_wpbcDataset_max.png (PNG copy)> <./FIGS/part1-r
-ealData/dim60_sonarDataset_min.png (PNG copy)> <./FIGS/part1-realData/dim60_son
-arDataset_max.png (PNG copy)> <./FIGS/part1-realData/dim100_hillDataset_min.png
- (PNG copy)> <./FIGS/part1-realData/dim100_hillDataset_max.png (PNG copy)>]
-[10 <./FIGS/part2-synData/dim2_dis2NN_hist.png (PNG copy)> <./FIGS/part2-realDa
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 325.
+[5 <./FIGS/example_gaussian_mixture.png (PNG copy)>] [6] [7 <./FIGS/part1-synDa
+ta/dim2_avg_min.png (PNG copy)> <./FIGS/part1-synData/dim2_avg_max.png (PNG cop
+y)> <./FIGS/part1-synData/dim5_avg_min.png (PNG copy)> <./FIGS/part1-synData/di
+m5_avg_max.png (PNG copy)> <./FIGS/part1-synData/dim10_avg_min.png (PNG copy)> 
+<./FIGS/part1-synData/dim10_avg_max.png (PNG copy)>] [8 <./FIGS/part1-synData/d
+im20_avg_min.png (PNG copy)> <./FIGS/part1-synData/dim20_avg_max.png (PNG copy)
+> <./FIGS/part1-synData/dim30_avg_min.png (PNG copy)> <./FIGS/part1-synData/dim
+30_avg_max.png (PNG copy)> <./FIGS/part1-synData/dim50_avg_min.png (PNG copy)> 
+<./FIGS/part1-synData/dim50_avg_max.png (PNG copy)> <./FIGS/part1-synData/dim10
+0_avg_min.png (PNG copy)> <./FIGS/part1-synData/dim100_avg_max.png (PNG copy)>]
+[9 <./FIGS/part1-realData/dim4_irisDataset_min.png (PNG copy)> <./FIGS/part1-re
+alData/dim4_irisDataset_max.png (PNG copy)> <./FIGS/part1-realData/dim8_abalone
+Dataset_min.png (PNG copy)> <./FIGS/part1-realData/dim8_abaloneDataset_max.png 
+(PNG copy)>] [10 <./FIGS/part1-realData/dim32_wpbcDataset_min.png (PNG copy)> <
+./FIGS/part1-realData/dim32_wpbcDataset_max.png (PNG copy)> <./FIGS/part1-realD
+ata/dim60_sonarDataset_min.png (PNG copy)> <./FIGS/part1-realData/dim60_sonarDa
+taset_max.png (PNG copy)> <./FIGS/part1-realData/dim100_hillDataset_min.png (PN
+G copy)> <./FIGS/part1-realData/dim100_hillDataset_max.png (PNG copy)>]
+[11 <./FIGS/part2-synData/dim2_dis2NN_hist.png (PNG copy)> <./FIGS/part2-realDa
 ta/dim4_iris_dis2NN_hist.png (PNG copy)>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 321.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 325.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 321.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 321.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 325.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 325.
 Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: FB07597D5390A651AF4AB773A8E7B0D6;463.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 321.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 325.
  ) 
 Here is how much of TeX's memory you used:
- 7704 strings out of 494910
- 118543 string characters out of 6179836
- 218016 words of memory out of 5000000
- 10821 multiletter control sequences out of 15000+600000
+ 7706 strings out of 494910
+ 118561 string characters out of 6179836
+ 212033 words of memory out of 5000000
+ 10822 multiletter control sequences out of 15000+600000
  10937 words of font info for 43 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 44i,11n,49p,2060b,440s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,11n,49p,2103b,438s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -705,10 +714,10 @@ sfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
 >
-Output written on report.pdf (10 pages, 1264103 bytes).
+Output written on report.pdf (11 pages, 1268334 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
- 166 compressed objects within 2 object streams
- 55 named destinations out of 1000 (max. 500000)
+ 232 PDF objects out of 1000 (max. 8388607)
+ 178 compressed objects within 2 object streams
+ 56 named destinations out of 1000 (max. 500000)
  208 words of extra memory for PDF output out of 10000 (max. 10000000)
 
